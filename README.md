@@ -1,7 +1,7 @@
-#Andras Arato Webpage
+# Andras Arato Webpage
 This is a simple webpage created as a project for a web development course. The page is about Andras Arato, a retired electrical engineer who became an internet meme due to a surprised facial expression in a stock photo.
 
-##Contents
+## Contents
 The webpage includes the following sections:
 
 About Me: A brief summary of Andras Arato's life and how he became a meme.
