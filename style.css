@@ -17,6 +17,7 @@ html{
 	justify-content: center;
 	align-items: center;
 	text-decoration : none;
+	z-index: 3;
 }
 
 #up_button{
@@ -130,6 +131,28 @@ h1{
 #qrcoder{
 	background-color: rgb(228, 245, 255);
 }
+
+.img_container {
+	position: relative;
+  }
+  
+  .img1 {
+	width: 300px;
+	position: absolute;
+	transition: ease-in-out 1s;
+	right: 0;
+  }
+  
+  .img2 {
+	position: relative;
+	z-index: 2;
+  }
+  
+  .img2:hover + .img1 {
+	transition: right 0.5s ease;
+	right: 250px;
+  }
+
 
 #spa{
 	background-color: rgb(202, 233, 250);
