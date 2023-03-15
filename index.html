@@ -2,6 +2,9 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<meta name="description" content="Andras Arato is a retired electrical engineer and internet meme who gained fame for his surprised facial expression in a stock photo.">
+<meta name="keywords" content="Andras Arato, electrical engineer, internet meme, surprised facial expression, stock photo">
+<meta name="author" content="Ariel dawidowicz">
 </head>
 <body>
 <div id="menu">
@@ -70,7 +73,7 @@
 
 <section id="like" class="section">
   <H1>Like?</H1>
-</section>
+  <div class="fb-like" data-href="https://web-development-environments-2023.github.io/324474857/#spa" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div></section>
 
 <section id="qrcoder" class="section">
   <H1>QR code</H1>
@@ -116,9 +119,9 @@
 
 <section id="contact" class="section">
   <H1>Contact me</H1>
-  <form id="email_form">
+  <form id="email_form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
     <label>Your email address:</label>
-    <input type="text"/>
+    <input type="text" required/>
     <div id="your_message_section">
     <label >Your Message:</label>
     <select id="emoji_select" onchange="addItem(this.value)">
@@ -131,9 +134,9 @@
       <option value="👎">👎</option>
     </select>
   </div>
-    <textarea id="message_input" maxlength="3000"></textarea>
+    <textarea id="message_input" maxlength="3000" required></textarea>
 
-    <button>Send</button>
+    <button type="submit" value="Send" >Send</button>
     
   </form>
 </section>
@@ -158,5 +161,7 @@ $(function(){
     textarea.value += text;
   }
 </script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v16.0" nonce="ouFiLfGL"></script>
 </body>
 </html>
